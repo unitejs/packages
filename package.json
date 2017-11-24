@@ -1,0 +1,25 @@
+{
+    "name": "unitejs-packages",
+    "version": "0.0.1",
+    "description": "Packages for use with UniteJS.",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/unitejs/packages.git"
+    },
+    "keywords": [
+        "unite",
+        "unitejs",
+        "packages"
+    ],
+    "author": "martyn@unitejs.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/unitejs/packages/issues"
+    },
+    "homepage": "https://github.com/unitejs/packages#readme",
+    "engines": {
+        "node": ">=8.0.0"
+    }
+}
