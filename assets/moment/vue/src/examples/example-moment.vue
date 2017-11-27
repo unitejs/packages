@@ -1,0 +1,4 @@
+<template>
+    <span>{{currentDateTime}}</span>
+</template>
+

@@ -1,0 +1,17 @@
+{
+    "name": "moment",
+    "version": "0.0.1",
+    "clientPackages": [
+        {
+            "name": "moment",
+            "profile": "moment"
+        }
+    ],
+    "routes": [
+        {
+            "path": "examples/moment",
+            "modulePath": "examples/examples-moment",
+            "moduleType": "ExampleMoment"
+        }
+    ]
+}   

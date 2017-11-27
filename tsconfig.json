@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "experimentalDecorators": true,
+        "module": "system",
+        "typeRoots": [],
+        "types": []
+    }
+}
