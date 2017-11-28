@@ -4,7 +4,7 @@
  * @export
  * @class ExampleMoment
  */
-import moment from "moment";
+import /* Synthetic Import */ moment from "moment";
 
 export class ExampleMoment {
     /**
