@@ -4,25 +4,35 @@
  * @export
  * @class ExampleMoment
  */
-import moment from "moment";
-import React from "react";
+import /* Synthetic Import */ moment from "moment";
+import /* Synthetic Import */ React from "react";
 
-export class ExampleMoment extends React.Component {
-    /**
-     * Current date and time displayed in the view.
-     * @type {string}
-     */
-    currentDateTime;
-
+export class ExampleMoment extends React.Component  {
     /**
      * Creates an instance of ExampleMoment.
      */
-    constructor() {
-        super();
-        setInterval(() => {
-                        this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+    constructor(props, context) {
+        super(props, context);
+        this.state = { currentDateTime: undefined };
+    }
+
+    /**
+     * The component is about to be mounted.
+     * @returns {void}
+     */
+    componentWillMount() {
+        this._intervalId = window.setInterval(() => {
+            this.setState({ currentDateTime: moment().format("YYYY-MM-DD HH:mm:ss") });
+        },
+        1000);
+    }
+
+    /**
+     * The component is about to be unmounted.
+     * @returns {void}
+     */
+    componentWillUnmount() {
+        window.clearInterval(this._intervalId);
     }
 
     /**
@@ -30,6 +40,6 @@ export class ExampleMoment extends React.Component {
      * @returns {JSX.Element}
      */
     render() {
-        return <span>{ this.currentDateTime }</span>;
+        return <span>{this.state.currentDateTime}</span>;
     }
 }

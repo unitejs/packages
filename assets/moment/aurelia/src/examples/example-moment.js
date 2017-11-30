@@ -14,12 +14,21 @@ export class ExampleMoment {
     currentDateTime;
 
     /**
-     * Creates an instance of ExampleMoment.
+     * The component is being attached to the DOM.
+     * @returns {void}
      */
-    constructor() {
-        setInterval(() => {
-                        this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+    attached() {
+        this._intervalId = window.setInterval(() => {
+            this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
+        },
+        1000);
+    }
+
+    /**
+     * The component is being detached from the DOM.
+     * @returns {void}
+     */
+    detached() {
+        window.clearInterval(this._intervalId);
     }
 }

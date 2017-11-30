@@ -9,20 +9,30 @@ import { Component, h } from "preact";
 
 export class ExampleMoment extends Component {
     /**
-     * Current date and time displayed in the view.
-     * @type {string}
-     */
-    currentDateTime;
-
-    /**
      * Creates an instance of ExampleMoment.
      */
-    constructor() {
-        super();
-        setInterval(() => {
-                        this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+    constructor(props, context) {
+        super(props, context);
+        this.state = { currentDateTime: undefined };
+    }
+
+    /**
+     * The component is about to be mounted.
+     * @returns {void}
+     */
+    componentWillMount() {
+        this._intervalId = window.setInterval(() => {
+            this.setState({ currentDateTime: moment().format("YYYY-MM-DD HH:mm:ss") });
+        },
+        1000);
+    }
+
+    /**
+     * The component is about to be unmounted.
+     * @returns {void}
+     */
+    componentWillUnmount() {
+        window.clearInterval(this._intervalId);
     }
 
     /**
@@ -30,6 +40,6 @@ export class ExampleMoment extends Component {
      * @returns {JSX.Element}
      */
     render() {
-        return <span>{ this.currentDateTime }</span>;
+        return <span>{this.state.currentDateTime}</span>;
     }
 }

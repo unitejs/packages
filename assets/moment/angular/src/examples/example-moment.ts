@@ -19,13 +19,24 @@ export class ExampleMoment {
      */
     public currentDateTime: string;
 
+    private _intervalId: number;
+
     /**
-     * Creates an instance of ExampleMoment.
+     * The component has been initialised.
+     * @returns {void}
      */
-    constructor() {
-        setInterval(() => {
-                        this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+    public ngOnInit(): void {
+        this._intervalId = window.setInterval(() => {
+            this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
+        },
+        1000);
+    }
+
+    /**
+     * The component has been destroyed.
+     * @returns {void}
+     */
+    public ngOnDestroy(): void {
+        window.clearInterval(this._intervalId);
     }
 }

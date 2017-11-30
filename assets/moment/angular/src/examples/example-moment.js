@@ -20,12 +20,21 @@ export class ExampleMoment {
     currentDateTime;
 
     /**
-     * Creates an instance of ExampleMoment.
+     * The component has been initialised.
+     * @returns {void}
      */
-    constructor() {
-        setInterval(() => {
-                        this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+    ngOnInit() {
+        this._intervalId = window.setInterval(() => {
+            this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
+        },
+        1000);
+    }
+
+    /**
+     * The component has been destroyed.
+     * @returns {void}
+     */
+    ngOnDestroy() {
+        window.clearInterval(this._intervalId);
     }
 }

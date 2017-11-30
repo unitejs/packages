@@ -7,16 +7,23 @@
 import moment from "moment";
 
 export class ExampleMoment {
-    _elem;
+    /**
+     * The component has been attached to the DOM.
+     * @returns {void}
+     */
+    attached() {
+        this._intervalId = window.setInterval(() => {
+            this._elem.innerText = moment().format("YYYY-MM-DD HH:mm:ss");
+        },
+        1000);
+    }
 
     /**
-     * Creates an instance of ExampleMoment.
+     * The component has been detached from the DOM.
+     * @returns {void}
      */
-    constructor() {
-        setInterval(() => {
-                        this._elem.innerText = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+    detached() {
+        window.clearInterval(this._intervalId);
     }
 
     /**
@@ -25,7 +32,6 @@ export class ExampleMoment {
      */
     render(parent) {
         this._elem = document.createElement("span");
-        this._elem.className = "child";
         parent.appendChild(this._elem);
     }
 }
