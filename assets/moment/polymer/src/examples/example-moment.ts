@@ -23,10 +23,10 @@ export class ExampleMoment extends PolymerElement {
      */
     constructor() {
         super();
-        setInterval(() => {
-                        this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+        window.setInterval(() => {
+            this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
+        },
+        1000);
     }
 
     /**

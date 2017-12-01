@@ -18,14 +18,28 @@ export class ExampleMoment extends Vue {
      */
     public currentDateTime: string;
 
+    private _intervalId: number;
+
+    public data(): any {
+        return { currentDateTime: this.currentDateTime };
+    }
+
     /**
-     * Creates an instance of ExampleMoment.
+     * The component has been mounted in the DOM.
+     * @returns {void}
      */
-    constructor() {
-        super();
-        setInterval(() => {
-                        this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-                    },
-                    1000);
+    public mounted(): any {
+        this._intervalId = window.setInterval(() => {
+            this.currentDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
+        },
+        1000);
+    }
+
+    /**
+     * The component has been destroyed.
+     * @returns {void}
+     */
+    public destroyed(): void {
+        window.clearInterval(this._intervalId);
     }
 }
