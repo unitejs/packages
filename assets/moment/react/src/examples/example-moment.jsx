@@ -4,7 +4,7 @@
  * @export
  * @class ExampleMoment
  */
-import /* Synthetic Import */ moment from "moment";
+import moment from "moment";
 import /* Synthetic Import */ React from "react";
 
 export class ExampleMoment extends React.Component  {

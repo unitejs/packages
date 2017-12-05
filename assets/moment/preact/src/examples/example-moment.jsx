@@ -5,7 +5,7 @@
  * @class ExampleMoment
  */
 import moment from "moment";
-import { Component, h } from "preact";
+import {Component, h} from "preact";
 
 export class ExampleMoment extends Component {
     /**
