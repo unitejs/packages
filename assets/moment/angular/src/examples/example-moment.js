@@ -5,7 +5,6 @@
  * @class ExampleMoment
  */
 import moment from "moment";
-
 import {Component} from "@angular/core";
 
 @Component({

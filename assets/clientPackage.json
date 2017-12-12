@@ -19,6 +19,16 @@
             "fonts/**/*"
         ]
     },
+    "lodash": {
+        "name": "lodash",
+        "main": "lodash.js",
+        "mainMinified": "lodash.min.js",
+        "includeMode": "both"
+    },
+    "@types/lodash": {
+        "name": "@types/lodash",
+        "isDevDependency": true
+    },
     "prismjs": {
         "name": "primsjs",
         "main": "prism.js",
