@@ -1,4 +1,4 @@
 <template>
-    <span>{{result1}}</span>
+    <span id="lodash-example">{{result1}}</span>
 </template>
 

@@ -26,6 +26,7 @@ export class ExampleLodash {
      */
     public render(parent: Element): void {
         this._elem = document.createElement("span");
+        this._elem.id = "lodash-example";
         parent.appendChild(this._elem);
     }
 }

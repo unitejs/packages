@@ -32,6 +32,7 @@ export class ExampleMoment {
      */
     render(parent) {
         this._elem = document.createElement("span");
+        this._elem.id = "moment-example";
         parent.appendChild(this._elem);
     }
 }

@@ -1,4 +1,4 @@
 <template>
-    <span>{{currentDateTime}}</span>
+    <span id="moment-example">{{currentDateTime}}</span>
 </template>
 

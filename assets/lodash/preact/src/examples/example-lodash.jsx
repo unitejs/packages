@@ -32,6 +32,6 @@ export class ExampleLodash extends Component {
      * @returns {JSX.Element}
      */
     render() {
-        return <span>{this.state.result1}</span>;
+        return <span id="lodash-example">{this.state.result1}</span>;
     }
 }

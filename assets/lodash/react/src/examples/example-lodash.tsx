@@ -32,6 +32,6 @@ export class ExampleLodash extends React.Component<any, {result1: string}>  {
      * @returns {JSX.Element}
      */
     public render(): JSX.Element {
-        return <span>{this.state.result1}</span>;
+        return <span id="lodash-example">{this.state.result1}</span>;
     }
 }

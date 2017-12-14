@@ -40,6 +40,6 @@ export class ExampleMoment extends React.Component  {
      * @returns {JSX.Element}
      */
     render() {
-        return <span>{this.state.currentDateTime}</span>;
+        return <span id="moment-example">{this.state.currentDateTime}</span>;
     }
 }

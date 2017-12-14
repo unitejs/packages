@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+* Added E2E Tests for CI builds
+
 ## 1.0.1
 
 * Added lodash

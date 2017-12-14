@@ -4,3 +4,9 @@
 .history
 .gitignore
 *.tgz
+test
+.eslintignore
+.eslintrc.json
+tsconfig.json
+tslint.json
+customTypes
