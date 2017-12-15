@@ -7,7 +7,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import "rxjs/add/observable/fromEvent";
 import "rxjs/add/operator/bufferCount";
-import { Observable } from "rxjs/Observable";
+import /* Synthetic Import */ RXO from "rxjs/Observable";
 
 @Component({
     moduleId: "genModuleId",
@@ -32,7 +32,7 @@ export class ExampleRxjs implements OnInit {
      * @returns {void}
      */
     public ngOnInit(): void {
-        Observable
+        RXO.Observable
             .fromEvent(this.btn.nativeElement, "click")
             .bufferCount(3)
             .subscribe(() => {
