@@ -2,7 +2,6 @@
 
 ## Utility
 
-* https://github.com/jashkenas/underscore
 * https://github.com/ReactiveX/rxjs
 * https://github.com/Modernizr/Modernizr
 
@@ -14,7 +13,6 @@
 
 ## Standard
 
-* https://github.com/moment/moment
 * https://github.com/moment/luxon
 * https://github.com/josdejong/mathjs
 * https://github.com/facebook/immutable-js

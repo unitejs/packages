@@ -1,0 +1,24 @@
+{
+    "name": "underscore",
+    "version": "0.0.1",
+    "clientPackages": {
+        "underscore": {
+            "profile": "underscore"
+        },
+        "@types/underscore": {
+            "profile": "@types/underscore",
+            "conditions": [
+                {
+                    "property": "sourceLanguage",
+                    "value": "TypeScript" 
+                }
+            ]
+        }
+    },
+    "routes": {
+        "examples/underscore": {
+            "modulePath": "./examples/example-underscore",
+            "moduleType": "ExampleUnderscore"
+        }
+    }
+}

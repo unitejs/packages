@@ -31,6 +31,7 @@
         "@types/lodash": "^4.14.88",
         "@types/polymer": "^1.2.1",
         "@types/react": "^16.0.25",
+        "@types/underscore": "^1.8.5",
         "babel-core": "^6.26.0",
         "babel-preset-env": "^1.6.1",
         "eslint": "^4.11.0",
@@ -44,6 +45,7 @@
         "tslint": "^5.8.0",
         "tslint-microsoft-contrib": "^5.0.1",
         "typescript": "^2.6.1",
+        "underscore": "^1.8.3",
         "unitejs-protractor-plugin": "^1.0.4",
         "vue": "^2.4.4",
         "vue-class-component": "^5.0.2"
