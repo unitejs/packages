@@ -1,0 +1,22 @@
+{
+    "name": "rxjs",
+    "version": "0.0.1",
+    "clientPackages": {
+        "rxjs": {
+            "profile": "rxjs"
+        }
+    },
+    "routes": {
+        "examples/rxjs": {
+            "modulePath": "./examples/example-rxjs",
+            "moduleType": "ExampleRxjs"
+        }
+    },
+    "conditions": [
+        {
+            "property": "bundler",
+            "value": "RequireJs",
+            "negate": true
+        }
+    ]
+}

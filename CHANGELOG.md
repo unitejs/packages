@@ -3,6 +3,7 @@
 ## 1.0.2
 
 * Added E2E Tests for CI builds
+* Added rxjs
 * Added underscore
 
 ## 1.0.1

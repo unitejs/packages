@@ -12,7 +12,10 @@
         "unite",
         "unitejs",
         "packages",
-        "moment"
+    "lodash",
+        "moment",
+        "rxjs",
+        "underscore"
     ],
     "author": "martyn@unitejs.com",
     "license": "MIT",
@@ -42,6 +45,7 @@
         "preact": "^8.2.6",
         "protractor": "^5.2.2",
         "react": "^16.1.1",
+        "rxjs": "^5.5.5",
         "tslint": "^5.8.0",
         "tslint-microsoft-contrib": "^5.0.1",
         "typescript": "^2.6.1",
