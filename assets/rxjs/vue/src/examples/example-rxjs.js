@@ -4,7 +4,7 @@
  * @export
  * @class ExampleRxjs
  */
-import _ from "rxjs";
+// import _ from "rxjs";
 import Vue from "vue";
 import Component from "vue-class-component";
 

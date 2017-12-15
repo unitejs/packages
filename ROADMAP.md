@@ -2,7 +2,6 @@
 
 ## Utility
 
-* https://github.com/ReactiveX/rxjs
 * https://github.com/Modernizr/Modernizr
 
 ## Polyfill
