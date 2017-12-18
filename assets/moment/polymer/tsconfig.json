@@ -1,10 +1,9 @@
 {
-    "extends": "../tsconfig.json",
+    "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "typeRoots": [],
         "types": [
-            "../../customTypes/polymer-element",
-            "../../customTypes/polymer-module"
+            "../../../customTypes/polymer-element",
+            "../../../customTypes/polymer-module"
         ]
     }
 }

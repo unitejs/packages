@@ -4,10 +4,18 @@
  * @export
  * @class ExampleRxjs
  */
-// import _ from "rxjs";
 import /* Synthetic Import */ React from "react";
+import "rxjs/add/observable/fromEvent";
+import "rxjs/add/operator/bufferCount";
+import /* Synthetic Import */ RXO from "rxjs/Observable";
 
 export class ExampleRxjs extends React.Component  {
+    /**
+     * btn is the button from the template
+     * @type {Element}
+     */
+    btn;
+    
     /**
      * Creates an instance of ExampleRxjs.
      */
@@ -17,11 +25,16 @@ export class ExampleRxjs extends React.Component  {
     }
 
     /**
-     * The component is about to be mounted.
+     * The component was mounted.
      * @returns {void}
      */
-    componentWillMount() {
-        this.setState({ result1: "Clicked 3 times!" });
+    componentDidMount() {
+        RXO.Observable
+            .fromEvent(this.btn, "click")
+            .bufferCount(3)
+            .subscribe(() => {
+                this.setState({ result1: "Clicked 3 times!" });
+            });
     }
 
     /**
@@ -30,7 +43,7 @@ export class ExampleRxjs extends React.Component  {
      */
     render() {
         return <div id="rxjs-example">
-            <button>Click Me</button>
+            <button ref={(btn) => { this.btn = btn; }}>Click Me</button>
             <span>{this.state.result1}</span>
         </div>;
     }

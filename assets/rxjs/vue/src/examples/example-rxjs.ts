@@ -4,7 +4,9 @@
  * @export
  * @class ExampleRxjs
  */
-// import /* Synthetic Import */ _ from "rxjs";
+import "rxjs/add/observable/fromEvent";
+import "rxjs/add/operator/bufferCount";
+import /* Synthetic Import */ RXO from "rxjs/Observable";
 import /* Synthetic Import */ Vue from "vue";
 import Component from "vue-class-component";
 
@@ -27,6 +29,11 @@ export class ExampleRxjs extends Vue {
      * @returns {void}
      */
     public mounted(): any {
-        this.result1 = "Clicked 3 times!";
+        RXO.Observable
+            .fromEvent(this.$refs.btn as Element, "click")
+            .bufferCount(3)
+            .subscribe(() => {
+                this.result1 = "Clicked 3 times!";
+            });
     }
 }

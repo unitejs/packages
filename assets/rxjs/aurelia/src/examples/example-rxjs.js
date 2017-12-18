@@ -4,7 +4,9 @@
  * @export
  * @class ExampleRxjs
  */
-// import _ from "rxjs";
+import "rxjs/add/observable/fromEvent";
+import "rxjs/add/operator/bufferCount";
+import /* Synthetic Import */ RXO from "rxjs/Observable";
 
 export class ExampleRxjs {
     /**
@@ -14,10 +16,21 @@ export class ExampleRxjs {
     result1;
 
     /**
+     * btn is the button from the template
+     * @type {HTMLButtonElement}
+     */
+    btn;
+
+    /**
      * The component is being attached to the DOM.
      * @returns {void}
      */
     attached() {
-        this.result1 = "Clicked 3 times!";
+        RXO.Observable
+            .fromEvent(this.btn, "click")
+            .bufferCount(3)
+            .subscribe(() => {
+                this.result1 = "Clicked 3 times!";
+            });
     }
 }
