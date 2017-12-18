@@ -3,7 +3,6 @@
 ## Utility
 
 * https://github.com/Modernizr/Modernizr
-* https://github.com/reactjs/redux
 
 ## Polyfill
 
@@ -61,6 +60,7 @@
 
 ## Storage
 
+* https://github.com/reactjs/redux
 * https://github.com/marcuswestin/store.js
 * https://github.com/localForage/localForage
 * https://github.com/pouchdb/pouchdb
