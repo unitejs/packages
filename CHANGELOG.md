@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+* Fix TypeScript version in 2.6 range until .d.ts defs for packages have caught up with 2.7
+
 ## 1.0.4
 
 * Re-enable dynamic browser-sync version
