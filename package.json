@@ -12,7 +12,7 @@
         "unite",
         "unitejs",
         "packages",
-    "lodash",
+        "lodash",
         "moment",
         "rxjs",
         "underscore"
