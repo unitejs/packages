@@ -187,7 +187,7 @@
     "uglify-js": "^3.2.2",
     "uglifyify": "^4.0.5",
     "uglifyjs-webpack-plugin": "^1.1.2",
-    "unitejs-image-cli": "^1.0.1",
+    "unitejs-image-cli": "^1.0.0",
     "unitejs-protractor-plugin": "^1.0.4",
     "unitejs-types": "^1.0.3",
     "unitejs-webdriver-plugin": "^1.0.5",
