@@ -5,7 +5,7 @@
  * @class ExampleLodash
  */
 import /* Synthetic Import */ _ from "lodash";
-import /* Synthetic Import */ Vue from "vue";
+import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({

@@ -5,7 +5,7 @@
  * @class ExampleMoment
  */
 import /* Synthetic Import */ moment from "moment";
-import /* Synthetic Import */ Vue from "vue";
+import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({

@@ -5,7 +5,7 @@
  * @class ExampleUnderscore
  */
 import /* Synthetic Import */ _ from "underscore";
-import /* Synthetic Import */ Vue from "vue";
+import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({

@@ -7,7 +7,7 @@
 import "rxjs/add/observable/fromEvent";
 import "rxjs/add/operator/bufferCount";
 import /* Synthetic Import */ RXO from "rxjs/Observable";
-import /* Synthetic Import */ Vue from "vue";
+import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({
