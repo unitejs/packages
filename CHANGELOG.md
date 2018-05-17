@@ -5,6 +5,7 @@
 * Update dependencies
 * Fixed polymer and webcomponent versions
 * Fixed webpack version
+* Fixed rxjs version
 
 ## 1.0.5
 
