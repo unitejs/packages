@@ -4,6 +4,7 @@
 
 * Update dependencies
 * Fixed polymer and webcomponent versions
+* Fixed webpack version
 
 ## 1.0.5
 
