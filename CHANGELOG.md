@@ -3,6 +3,7 @@
 ## 1.0.6
 
 * Update dependencies
+* Fixed polymer and webcomponent versions
 
 ## 1.0.5
 
