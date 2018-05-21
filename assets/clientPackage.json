@@ -7,7 +7,6 @@
     },
     "bootstrap4": {
         "name": "bootstrap",
-        "version": "4.0.0-beta",
         "noScript": true
     },
     "font-awesome": {
@@ -39,6 +38,7 @@
     },
     "rxjs": {
         "name": "rxjs",
+        "version": "5.5.10",
         "main": "*",
         "mainLib": [
             "*.js",

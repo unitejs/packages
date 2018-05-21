@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8
+
+* Fixed rxjs version
+
 ## 1.0.7
 
 * Updated gulp-less

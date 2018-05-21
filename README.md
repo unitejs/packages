@@ -8,7 +8,10 @@ When installed the package will also endeavour to create a router entry to link 
 
 ## Current Packages
 
+* lodash - [https://lodash.com/](https://lodash.com/)
 * moment - [https://momentjs.com/](https://momentjs.com/)
+* rxjs - [https://github.com/ReactiveX/RxJS](https://github.com/ReactiveX/RxJS)
+* underscore - [http://underscorejs.org/](http://underscorejs.org/)
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
