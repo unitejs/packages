@@ -16,13 +16,6 @@ export class ExampleMoment extends Component<any, {currentDateTime: string}>  {
     constructor(props?: any, context?: any) {
         super(props, context);
         this.state = { currentDateTime: undefined };
-    }
-
-    /**
-     * The component is about to be mounted.
-     * @returns {void}
-     */
-    public componentWillMount(): void {
         this._intervalId = window.setInterval(() => {
             this.setState({ currentDateTime: moment().format("YYYY-MM-DD HH:mm:ss") });
         },

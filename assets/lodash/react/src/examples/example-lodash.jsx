@@ -13,18 +13,11 @@ export class ExampleLodash extends React.Component  {
      */
     constructor(props, context) {
         super(props, context);
-        this.state = { result1: undefined };
-    }
 
-    /**
-     * The component is about to be mounted.
-     * @returns {void}
-     */
-    componentWillMount() {
         const objA = {name: "bob", car: "porsche"};
         const objB = {name: "bill", age: 40};
 
-        this.setState({result1: JSON.stringify(_.assign(objA, objB))});
+        this.state = { result1: JSON.stringify(_.assign(objA, objB)) };
     }
 
     /**

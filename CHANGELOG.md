@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.9
+
+* Removed react componentWillMount usage
+* Updated vue moment synthetic import as vue now uses esModuleInterop for TypeScript
+
 ## 1.0.8
 
 * Fixed rxjs version
