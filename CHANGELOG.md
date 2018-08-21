@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.10
+
+* New Dependencies
+
 ## 1.0.9
 
 * Removed react componentWillMount usage
