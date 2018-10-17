@@ -22,7 +22,7 @@
     "@types/react-dom": "^16.0.5",
     "@types/react-router-dom": "^4.2.6",
     "@types/systemjs": "^0.20.6",
-    "@types/webcomponents.js": "0.6.32",
+    "@types/webcomponents.js": "0.6.33",
     "@types/webdriverio": "^4.10.1",
     "@webcomponents/shadycss": "1.1.0",
     "@webcomponents/webcomponentsjs": "1.0.20",

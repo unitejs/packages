@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.11
+
+* Updated @types/webcomponents.js to 0.6.33
+
 ## 1.0.10
 
 * New Dependencies
