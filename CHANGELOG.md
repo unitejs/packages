@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0
+
+* Updated Angular v7
+* Updated Babel v7
+* Updated ESLint v5
+* Updated Jest v23
+* Updated JSDom v12
+* Updated Karma v3
+* Updated Mocha v5
+* Updated Rxjs v6
+* Updated Webpack v4
+
 ## 1.0.11
 
 * Updated @types/webcomponents.js to 0.6.33

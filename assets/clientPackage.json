@@ -38,19 +38,30 @@
     },
     "rxjs": {
         "name": "rxjs",
-        "version": "5.5.10",
         "main": "*",
+        "libFile": "index.js",
+        "libExtension": "js",
         "mainLib": [
-            "*.js",
-            "add/**/*.js",
-            "observable/**/*.js",
-            "operator/**/*.js",
-            "operators/**/*.js",
-            "scheduler/**/*.js",
-            "symbol/**/*.js",
-            "testing/**/*.js",
-            "util/**/*.js"
+            "operator",
+            "operators",
+            "observable",
+            "scheduler",
+            "symbol",
+            "testing",
+            "add/operator",
+            "add/observable",
+            "internal",
+            "internal/observable",
+            "internal/operators",
+            "internal/scheduler",
+            "internal/symbol",
+            "internal/testing",
+            "internal/util",
+            "util"
         ]
+    },
+    "rxjs-compat": {
+        "name": "rxjs-compat"
     },
     "underscore": {
         "name": "underscore",

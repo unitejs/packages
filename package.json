@@ -1,6 +1,6 @@
 {
     "name": "unitejs-packages",
-    "version": "1.0.11",
+    "version": "1.1.0",
     "description": "Packages for use with UniteJS.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
