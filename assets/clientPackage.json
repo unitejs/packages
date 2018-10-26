@@ -61,7 +61,26 @@
         ]
     },
     "rxjs-compat": {
-        "name": "rxjs-compat"
+        "name": "rxjs-compat",
+        "main": "*",
+        "mainLib": [
+            "operator",
+            "operators",
+            "observable",
+            "scheduler",
+            "symbol",
+            "testing",
+            "add/operator",
+            "add/observable",
+            "internal",
+            "internal/observable",
+            "internal/operators",
+            "internal/scheduler",
+            "internal/symbol",
+            "internal/testing",
+            "internal/util",
+            "util"
+        ]
     },
     "underscore": {
         "name": "underscore",
