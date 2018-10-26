@@ -193,7 +193,7 @@
     "unitejs-protractor-plugin": "1.0.4",
     "unitejs-types": "1.0.3",
     "unitejs-webdriver-plugin": "1.0.5",
-    "vinyl-buffer": "1.0.0",
+    "vinyl-buffer": "1.0.1",
     "vinyl-source-stream": "2.0.0",
     "vue": "2.5.16",
     "vue-class-component": "6.2.0",
