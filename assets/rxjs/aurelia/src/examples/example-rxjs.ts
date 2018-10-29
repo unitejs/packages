@@ -4,9 +4,8 @@
  * @export
  * @class ExampleRxjs
  */
-import "rxjs/add/observable/fromEvent";
-import "rxjs/add/operator/bufferCount";
-import /* Synthetic Import */ RXO from "rxjs/Observable";
+import { fromEvent } from "rxjs";
+import { bufferCount } from "rxjs/operators";
 
 export class ExampleRxjs {
     /**
@@ -26,9 +25,8 @@ export class ExampleRxjs {
      * @returns {void}
      */
     public attached(): void {
-        RXO.Observable
-            .fromEvent(this.btn, "click")
-            .bufferCount(3)
+        fromEvent(this.btn, "click")
+            .pipe(bufferCount(3))
             .subscribe(() => {
                 this.result1 = "Clicked 3 times!";
             });

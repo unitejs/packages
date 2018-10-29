@@ -5,9 +5,8 @@
  * @class ExampleRxjs
  */
 import {Component, ViewChild} from "@angular/core";
-import "rxjs/add/observable/fromEvent";
-import "rxjs/add/operator/bufferCount";
-import /* Synthetic Import */ RXO from "rxjs/Observable";
+import { fromEvent } from "rxjs";
+import { bufferCount } from "rxjs/operators";
 
 @Component({
     moduleId: "genModuleId",
@@ -32,9 +31,8 @@ export class ExampleRxjs {
      * @returns {void}
      */
     ngOnInit() {
-        RXO.Observable
-            .fromEvent(this.btn.nativeElement, "click")
-            .bufferCount(3)
+        fromEvent(this.btn.nativeElement, "click")
+            .pipe(bufferCount(3))
             .subscribe(() => {
                 this.result1 = "Clicked 3 times!";
             });

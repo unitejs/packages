@@ -165,7 +165,6 @@
     "requirejs-text": "2.0.15",
     "run-sequence": "2.2.1",
     "rxjs": "6.3.3",
-    "rxjs-compat": "6.3.3",
     "sass-lint": "1.12.1",
     "selenium-standalone": "6.15.3",
     "source-map-loader": "0.2.4",

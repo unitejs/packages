@@ -4,9 +4,6 @@
     "clientPackages": {
         "rxjs": {
             "profile": "rxjs"
-        },
-        "rxjs-compat": {
-            "profile": "rxjs-compat"
         }
     },
     "routes": {

@@ -60,20 +60,6 @@
             "util"
         ]
     },
-    "rxjs-compat": {
-        "name": "rxjs-compat",
-        "main": "*",
-        "mainLib": [
-            "operator",
-            "operators",
-            "observable",
-            "scheduler",
-            "symbol",
-            "add/operator",
-            "add/observable",
-            "util"
-        ]
-    },
     "underscore": {
         "name": "underscore",
         "main": "underscore.js",

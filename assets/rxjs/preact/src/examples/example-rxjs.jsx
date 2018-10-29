@@ -5,9 +5,8 @@
  * @class ExampleRxjs
  */
 import {Component, h} from "preact";
-import "rxjs/add/observable/fromEvent";
-import "rxjs/add/operator/bufferCount";
-import /* Synthetic Import */ RXO from "rxjs/Observable";
+import { fromEvent } from "rxjs";
+import { bufferCount } from "rxjs/operators";
 
 export class ExampleRxjs extends Component {
     /**
@@ -29,9 +28,8 @@ export class ExampleRxjs extends Component {
      * @returns {void}
      */
     componentDidMount() {
-        RXO.Observable
-            .fromEvent(this.btn, "click")
-            .bufferCount(3)
+        fromEvent(this.btn, "click")
+            .pipe(bufferCount(3))
             .subscribe(() => {
                 this.setState({ result1: "Clicked 3 times!" });
             });

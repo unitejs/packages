@@ -5,9 +5,8 @@
  * @class ExampleRxjs
  */
 import /* Synthetic Import */ React from "react";
-import "rxjs/add/observable/fromEvent";
-import "rxjs/add/operator/bufferCount";
-import /* Synthetic Import */ RXO from "rxjs/Observable";
+import { fromEvent } from "rxjs";
+import { bufferCount } from "rxjs/operators";
 
 export class ExampleRxjs extends React.Component<any, {result1: string}>  {
     /**
@@ -29,9 +28,8 @@ export class ExampleRxjs extends React.Component<any, {result1: string}>  {
      * @returns {void}
      */
     public componentDidMount(): void {
-        RXO.Observable
-            .fromEvent(this.btn, "click")
-            .bufferCount(3)
+        fromEvent(this.btn, "click")
+            .pipe(bufferCount(3))
             .subscribe(() => {
                 this.setState({ result1: "Clicked 3 times!" });
             });
