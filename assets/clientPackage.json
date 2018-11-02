@@ -40,7 +40,6 @@
         "name": "rxjs",
         "main": "*",
         "libFile": "index.js",
-        "libExtension": "js",
         "mainLib": [
             "operator",
             "operators",
