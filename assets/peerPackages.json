@@ -192,7 +192,7 @@
     "uglifyjs-webpack-plugin": "2.0.1",
     "unitejs-image-cli": "1.0.1",
     "unitejs-protractor-plugin": "1.0.4",
-    "unitejs-systemjs-plugin-babel": "^1.0.0",
+    "unitejs-systemjs-plugin-babel": "^1.0.1",
     "unitejs-types": "1.0.3",
     "unitejs-webdriver-plugin": "1.0.5",
     "vinyl-buffer": "1.0.1",
