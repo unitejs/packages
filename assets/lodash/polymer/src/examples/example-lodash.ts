@@ -4,10 +4,10 @@
  * @export
  * @class ExampleLodash
  */
-import {customElement, observe, property} from "@polymer/decorators/src/decorators";
-import {Element as PolymerElement} from "@polymer/polymer/polymer-element";
+import {customElement, observe, property} from "@polymer/decorators";
+import {PolymerElement} from "@polymer/polymer/polymer-element";
 import /* Synthetic Import */ _ from "lodash";
-import /* Synthetic Import */ template from "./example-lodash.html";
+import template from "./example-lodash.html";
 
 @customElement("co-example-lodash")
 export class ExampleLodash extends PolymerElement {
@@ -40,9 +40,11 @@ export class ExampleLodash extends PolymerElement {
      * Get the template.
      * @readonly
      * @static
-     * @returns {string}
+     * @returns {HTMLTemplateElement}
      */
-    static get template() {
-        return `${template}`;
+    static get template(): HTMLTemplateElement {
+        const temp = document.createElement("template");
+        temp.innerHTML = template.trim();
+        return temp;
     }
 }

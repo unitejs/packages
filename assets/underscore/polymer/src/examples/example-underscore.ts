@@ -4,10 +4,10 @@
  * @export
  * @class ExampleUnderscore
  */
-import {customElement, observe, property} from "@polymer/decorators/src/decorators";
-import {Element as PolymerElement} from "@polymer/polymer/polymer-element";
+import {customElement, observe, property} from "@polymer/decorators";
+import {PolymerElement} from "@polymer/polymer/polymer-element";
 import /* Synthetic Import */ _ from "underscore";
-import /* Synthetic Import */ template from "./example-underscore.html";
+import template from "./example-underscore.html";
 
 @customElement("co-example-underscore")
 export class ExampleUnderscore extends PolymerElement {
@@ -40,9 +40,11 @@ export class ExampleUnderscore extends PolymerElement {
      * Get the template.
      * @readonly
      * @static
-     * @returns {string}
+     * @returns {HTMLTemplateElement}
      */
-    static get template() {
-        return `${template}`;
+    static get template(): HTMLTemplateElement {
+        const temp = document.createElement("template");
+        temp.innerHTML = template.trim();
+        return temp;
     }
 }

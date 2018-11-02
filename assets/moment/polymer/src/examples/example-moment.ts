@@ -4,10 +4,10 @@
  * @export
  * @class ExampleMoment
  */
-import {customElement, observe, property} from "@polymer/decorators/src/decorators";
-import {Element as PolymerElement} from "@polymer/polymer/polymer-element";
+import {customElement, observe, property} from "@polymer/decorators";
+import {PolymerElement} from "@polymer/polymer/polymer-element";
 import /* Synthetic Import */ moment from "moment";
-import /* Synthetic Import */ template from "./example-moment.html";
+import template from "./example-moment.html";
 
 @customElement("co-example-moment")
 export class ExampleMoment extends PolymerElement {
@@ -46,9 +46,11 @@ export class ExampleMoment extends PolymerElement {
      * Get the template.
      * @readonly
      * @static
-     * @returns {string}
+     * @returns {HTMLTemplateElement}
      */
-    static get template() {
-        return `${template}`;
+    static get template(): HTMLTemplateElement {
+        const temp = document.createElement("template");
+        temp.innerHTML = template.trim();
+        return temp;
     }
 }

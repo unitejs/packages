@@ -4,11 +4,11 @@
  * @export
  * @class ExampleRxjs
  */
-import {customElement, observe, property} from "@polymer/decorators/src/decorators";
-import {Element as PolymerElement} from "@polymer/polymer/polymer-element";
+import {customElement, observe, property} from "@polymer/decorators";
+import {PolymerElement} from "@polymer/polymer/polymer-element";
 import { fromEvent } from "rxjs";
 import { bufferCount } from "rxjs/operators";
-import /* Synthetic Import */ template from "./example-rxjs.html";
+import template from "./example-rxjs.html";
 
 @customElement("co-example-rxjs")
 export class ExampleRxjs extends PolymerElement {
@@ -48,9 +48,11 @@ export class ExampleRxjs extends PolymerElement {
      * Get the template.
      * @readonly
      * @static
-     * @returns {string}
+     * @returns {HTMLTemplateElement}
      */
-    static get template() {
-        return `${template}`;
+    static get template(): HTMLTemplateElement {
+        const temp = document.createElement("template");
+        temp.innerHTML = template.trim();
+        return temp;
     }
 }
