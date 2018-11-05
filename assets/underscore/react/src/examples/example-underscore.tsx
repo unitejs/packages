@@ -4,8 +4,8 @@
  * @export
  * @class ExampleUnderscore
  */
-import /* Synthetic Import */ React from "react";
-import /* Synthetic Import */ _ from "underscore";
+import React from "react";
+import _ from "underscore";
 
 export class ExampleUnderscore extends React.Component<any, {result1: string}>  {
     /**

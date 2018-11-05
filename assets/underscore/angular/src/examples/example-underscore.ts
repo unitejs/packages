@@ -5,7 +5,7 @@
  * @class ExampleUnderscore
  */
 import { Component } from "@angular/core";
-import /* Synthetic Import */ _ from "underscore";
+import _ from "underscore";
 
 @Component({
     moduleId: "genModuleId",

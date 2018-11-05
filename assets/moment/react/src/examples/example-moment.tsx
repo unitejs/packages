@@ -4,8 +4,8 @@
  * @export
  * @class ExampleMoment
  */
-import /* Synthetic Import */ moment from "moment";
-import /* Synthetic Import */ React from "react";
+import moment from "moment";
+import React from "react";
 
 export class ExampleMoment extends React.Component<any, {currentDateTime: string}>  {
     private _intervalId: number;

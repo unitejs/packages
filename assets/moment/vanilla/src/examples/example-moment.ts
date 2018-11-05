@@ -4,7 +4,7 @@
  * @export
  * @class ExampleMoment
  */
-import /* Synthetic Import */ moment from "moment";
+import moment from "moment";
 
 export class ExampleMoment {
     private _elem: HTMLElement;

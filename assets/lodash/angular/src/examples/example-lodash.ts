@@ -5,7 +5,7 @@
  * @class ExampleLodash
  */
 import { Component } from "@angular/core";
-import /* Synthetic Import */ _ from "lodash";
+import _ from "lodash";
 
 @Component({
     moduleId: "genModuleId",

@@ -5,7 +5,7 @@
  * @class ExampleUnderscore
  */
 import { Component, h } from "preact";
-import /* Synthetic Import */ _ from "underscore";
+import _ from "underscore";
 
 export class ExampleUnderscore extends Component<any, { result1: string }>  {
     /**

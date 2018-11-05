@@ -4,7 +4,7 @@
  * @export
  * @class ExampleLodash
  */
-import /* Synthetic Import */ _ from "lodash";
+import _ from "lodash";
 import { Component, h } from "preact";
 
 export class ExampleLodash extends Component<any, { result1: string }>  {

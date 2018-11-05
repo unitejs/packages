@@ -4,7 +4,7 @@
  * @export
  * @class ExampleUnderscore
  */
-import /* Synthetic Import */ _ from "underscore";
+import _ from "underscore";
 
 export class ExampleUnderscore {
     private _elem: HTMLElement;

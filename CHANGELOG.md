@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+* Updated Polymer v3 Release
+* Added babel-loader
+* Added babelify
+
 ## 1.1.0
 
 * Updated Angular v7

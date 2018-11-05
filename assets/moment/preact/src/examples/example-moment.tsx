@@ -4,7 +4,7 @@
  * @export
  * @class ExampleMoment
  */
-import /* Synthetic Import */ moment from "moment";
+import moment from "moment";
 import { Component, h } from "preact";
 
 export class ExampleMoment extends Component<any, {currentDateTime: string}>  {

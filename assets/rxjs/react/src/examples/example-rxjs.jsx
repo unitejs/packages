@@ -4,7 +4,7 @@
  * @export
  * @class ExampleRxjs
  */
-import /* Synthetic Import */ React from "react";
+import React from "react";
 import { fromEvent } from "rxjs";
 import { bufferCount } from "rxjs/operators";
 

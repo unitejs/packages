@@ -4,7 +4,7 @@
  * @export
  * @class ExampleUnderscore
  */
-import /* Synthetic Import */ _ from "underscore";
+import _ from "underscore";
 import Vue from "vue";
 import Component from "vue-class-component";
 

@@ -4,7 +4,7 @@
  * @export
  * @class ExampleLodash
  */
-import /* Synthetic Import */ _ from "lodash";
+import _ from "lodash";
 
 export class ExampleLodash {
     /**

@@ -4,8 +4,8 @@
  * @export
  * @class ExampleLodash
  */
-import /* Synthetic Import */ _ from "lodash";
-import /* Synthetic Import */ React from "react";
+import _ from "lodash";
+import React from "react";
 
 export class ExampleLodash extends React.Component<any, {result1: string}>  {
     /**

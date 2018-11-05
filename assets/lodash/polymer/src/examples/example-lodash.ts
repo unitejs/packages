@@ -6,7 +6,7 @@
  */
 import {customElement, observe, property} from "@polymer/decorators";
 import {PolymerElement} from "@polymer/polymer/polymer-element";
-import /* Synthetic Import */ _ from "lodash";
+import _ from "lodash";
 import template from "./example-lodash.html";
 
 @customElement("co-example-lodash")

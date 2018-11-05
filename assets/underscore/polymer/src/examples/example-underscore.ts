@@ -6,7 +6,7 @@
  */
 import {customElement, observe, property} from "@polymer/decorators";
 import {PolymerElement} from "@polymer/polymer/polymer-element";
-import /* Synthetic Import */ _ from "underscore";
+import _ from "underscore";
 import template from "./example-underscore.html";
 
 @customElement("co-example-underscore")

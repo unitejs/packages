@@ -6,7 +6,7 @@
  */
 import {customElement, observe, property} from "@polymer/decorators";
 import {PolymerElement} from "@polymer/polymer/polymer-element";
-import /* Synthetic Import */ moment from "moment";
+import moment from "moment";
 import template from "./example-moment.html";
 
 @customElement("co-example-moment")
