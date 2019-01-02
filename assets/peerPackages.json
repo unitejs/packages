@@ -97,7 +97,7 @@
     "gulp-eslint": "5.0.0",
     "gulp-htmlmin": "5.0.1",
     "gulp-inline-ng2-template": "5.0.1",
-    "gulp-inline-vue-template": "1.0.1",
+    "gulp-inline-vue-template": "1.0.2",
     "gulp-insert": "0.5.0",
     "gulp-karma-runner": "2.0.1",
     "gulp-less": "4.0.1",

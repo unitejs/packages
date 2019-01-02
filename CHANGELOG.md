@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+* Bump gulp-inline-vue-template
+
 ## 1.1.1
 
 * Updated Polymer v3 Release
